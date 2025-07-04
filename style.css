@@ -540,7 +540,7 @@
                 margin-bottom: 1.5rem;
             }
 
-            .cta-button {
+            .cta-button, .cta-button2 {
                 padding: 0.8rem 1.5rem;
                 font-size: 0.9rem;
             }
@@ -632,7 +632,7 @@
                 height: 120px;
             }
 
-            .cta-button {
+            .cta-button, .cta-button2 {
                 padding: 0.7rem 1.2rem;
             }
         }
