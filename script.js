@@ -65,4 +65,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Start typing effect
     setTimeout(type, 1000);
+
+    // Scroll Reveal Animation
+    const revealElements = document.querySelectorAll('.section-title, .about-content, .skills-grid, .projects-grid, .contact-wrapper');
+    
+    revealElements.forEach(el => el.classList.add('reveal'));
+
+    const revealOptions = {
+        threshold: 0.15,
+        rootMargin: "0px 0px -50px 0px"
+    };
+
+    const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, revealOptions);
+
+    revealElements.forEach(el => {
+        revealOnScroll.observe(el);
+    });
 });
