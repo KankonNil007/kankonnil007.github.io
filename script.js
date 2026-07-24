@@ -88,4 +88,73 @@ document.addEventListener('DOMContentLoaded', () => {
     revealElements.forEach(el => {
         revealOnScroll.observe(el);
     });
+
+    // Working Contact Form Submission Handler
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const nameInput = document.getElementById('contactName');
+            const emailInput = document.getElementById('contactEmail');
+            const subjectInput = document.getElementById('contactSubject');
+            const messageInput = document.getElementById('contactMessage');
+            const submitBtn = document.getElementById('contactSubmitBtn');
+            const responseDiv = document.getElementById('contactFormResponse');
+
+            const name = nameInput.value.trim();
+            const email = emailInput.value.trim();
+            const subject = subjectInput.value.trim();
+            const message = messageInput.value.trim();
+
+            if (!name || !email || !subject || !message) {
+                showResponse('Please fill in all required fields.', 'error');
+                return;
+            }
+
+            // Disable button and show sending state
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+            responseDiv.style.display = 'none';
+
+            try {
+                // Post form payload to FormSubmit API endpoint to deliver real email
+                const response = await fetch('https://formsubmit.co/ajax/kankonmondal89@gmail.com', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        name: name,
+                        email: email,
+                        _subject: `Portfolio Inquiry: ${subject}`,
+                        message: message
+                    })
+                });
+
+                if (response.ok) {
+                    showResponse(`<i class="fa-solid fa-circle-check"></i> Thank you, ${name}! Your message has been sent directly to Kankon.`, 'success');
+                    contactForm.reset();
+                } else {
+                    throw new Error('Network error during form submission');
+                }
+            } catch (err) {
+                // Fallback to mailto link pre-filled with subject and body
+                const mailtoUrl = `mailto:kankonmondal89@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+                window.location.href = mailtoUrl;
+                showResponse(`<i class="fa-solid fa-envelope-open-text"></i> Opening your email client to complete sending your message... Thank you, ${name}!`, 'success');
+                contactForm.reset();
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Send Message';
+            }
+
+            function showResponse(msg, type) {
+                responseDiv.innerHTML = msg;
+                responseDiv.className = `form-response ${type}`;
+                responseDiv.style.display = 'block';
+            }
+        });
+    }
 });

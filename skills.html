@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body style="padding-top: 80px;">
     <!-- Navbar -->
@@ -37,9 +38,9 @@
         <div class="container">
             <h2 class="section-title">My Skills</h2>
             <div class="skills-grid">
-                <!-- Frontend -->
+                <!-- Web & Backend -->
                 <div class="skill-category">
-                    <h3>Frontend</h3>
+                    <h3><i class="fa-solid fa-globe"></i> Web & Backend</h3>
                     <div class="skill-cards">
                         <div class="skill-card">
                             <i class="fa-brands fa-html5"></i>
@@ -53,15 +54,23 @@
                             <i class="fa-brands fa-js"></i>
                             <span>JavaScript</span>
                         </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-server"></i>
+                            <span>FastAPI</span>
+                        </div>
                     </div>
                 </div>
                 <!-- Core Languages -->
                 <div class="skill-category">
-                    <h3>Core Languages</h3>
+                    <h3><i class="fa-solid fa-code"></i> Core Languages</h3>
                     <div class="skill-cards">
                         <div class="skill-card">
                             <i class="fa-solid fa-c"></i>
                             <span>C</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <span>C++</span>
                         </div>
                         <div class="skill-card">
                             <i class="fa-brands fa-python"></i>
@@ -73,31 +82,39 @@
                         </div>
                     </div>
                 </div>
-                <!-- Data Science -->
+                <!-- Data Science & ML -->
                 <div class="skill-category">
-                    <h3>Data Science</h3>
+                    <h3><i class="fa-solid fa-brain"></i> Data Science & ML</h3>
                     <div class="skill-cards">
+                        <div class="skill-card">
+                            <i class="fa-solid fa-brain"></i>
+                            <span>ML</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-robot"></i>
+                            <span>Scikit-Learn</span>
+                        </div>
                         <div class="skill-card">
                             <i class="fa-solid fa-table"></i>
                             <span>Pandas</span>
                         </div>
                         <div class="skill-card">
-                            <i class="fa-solid fa-square-root-variable"></i>
-                            <span>NumPy</span>
-                        </div>
-                        <div class="skill-card">
-                            <i class="fa-solid fa-book-open"></i>
-                            <span>Jupyter</span>
+                            <i class="fa-solid fa-chart-line"></i>
+                            <span>Matplotlib</span>
                         </div>
                     </div>
                 </div>
                 <!-- Hardware -->
                 <div class="skill-category">
-                    <h3>Hardware & Electronics</h3>
+                    <h3><i class="fa-solid fa-microchip"></i> Hardware & Electronics</h3>
                     <div class="skill-cards">
                         <div class="skill-card">
                             <i class="fa-solid fa-microchip"></i>
                             <span>Arduino</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-square-root-variable"></i>
+                            <span>MATLAB</span>
                         </div>
                         <div class="skill-card">
                             <i class="fa-solid fa-wave-square"></i>
@@ -111,19 +128,19 @@
                 </div>
                 <!-- Tools -->
                 <div class="skill-category">
-                    <h3>Tools</h3>
+                    <h3><i class="fa-solid fa-screwdriver-wrench"></i> Tools & Version Control</h3>
                     <div class="skill-cards">
                         <div class="skill-card">
                             <i class="fa-brands fa-git-alt"></i>
                             <span>Git</span>
                         </div>
                         <div class="skill-card">
-                            <i class="fa-solid fa-code"></i>
-                            <span>VS Code</span>
+                            <i class="fa-solid fa-book-open"></i>
+                            <span>Jupyter</span>
                         </div>
                         <div class="skill-card">
-                            <i class="fa-brands fa-github"></i>
-                            <span>GitHub</span>
+                            <i class="fa-solid fa-code"></i>
+                            <span>VS Code</span>
                         </div>
                         <div class="skill-card">
                             <i class="fa-brands fa-linux"></i>
@@ -138,20 +155,45 @@
     <!-- Certifications -->
     <section class="section-padding">
         <div class="container">
-            <h2 class="section-title">Certifications</h2>
+            <h2 class="section-title">Certifications & Verified Credentials</h2>
             <div class="cert-grid">
+                <!-- Cert 1: Intro to Data Science -->
+                <a href="https://coursera.org/verify/MHM6FC476N4F" target="_blank" class="cert-card-img">
+                    <img src="assets/Introduction-to-Data-Science.jpg" alt="Introduction to Data Science in Python Certificate - University of Michigan">
+                    <div class="cert-info">
+                        <h4>Introduction to Data Science in Python</h4>
+                        <p>University of Michigan via Coursera • March 17, 2026</p>
+                        <span class="verify-badge"><i class="fa-solid fa-square-check"></i> Verified Certificate</span>
+                    </div>
+                </a>
+
+                <!-- Cert 2: Applied Plotting -->
+                <a href="https://coursera.org/verify/3RBFUF5AD9NI" target="_blank" class="cert-card-img">
+                    <img src="assets/Applied-Plotting-Charting-and-Data-Representation-in-Python.jpg" alt="Applied Plotting, Charting & Data Representation in Python Certificate - University of Michigan">
+                    <div class="cert-info">
+                        <h4>Applied Plotting, Charting & Data Representation in Python</h4>
+                        <p>University of Michigan via Coursera • June 8, 2026</p>
+                        <span class="verify-badge"><i class="fa-solid fa-square-check"></i> Verified Certificate</span>
+                    </div>
+                </a>
+
+                <!-- Cert 3: Python for Data Science, AI & Development -->
+                <a href="https://coursera.org/verify/OO2WDVEV3CJC" target="_blank" class="cert-card-img">
+                    <img src="assets/Python-for-Data-Science-AI-and-Development.jpg" alt="Python for Data Science, AI & Development Certificate - IBM">
+                    <div class="cert-info">
+                        <h4>Python for Data Science, AI & Development</h4>
+                        <p>IBM via Coursera • June 12, 2026</p>
+                        <span class="verify-badge"><i class="fa-solid fa-square-check"></i> Verified Certificate</span>
+                    </div>
+                </a>
+
+                <!-- Cert 4: CS50x -->
                 <a href="https://cs50.harvard.edu/certificates/658c719e-59a7-40a3-a2e9-f0b33d38dd83" target="_blank" class="cert-card-img">
                     <img src="assets/CS50x.png" alt="CS50x Certificate - Harvard University">
                     <div class="cert-info">
                         <h4>CS50x – Introduction to Computer Science</h4>
                         <p>Harvard University • 2026</p>
-                    </div>
-                </a>
-                <a href="https://coursera.org/verify/MHM6FC476N4F" target="_blank" class="cert-card-img">
-                    <img src="assets/Introduction-to-Data-Science.jpg" alt="Introduction to Data Science in Python Certificate">
-                    <div class="cert-info">
-                        <h4>Introduction to Data Science in Python</h4>
-                        <p>University of Michigan via Coursera • 2026</p>
+                        <span class="verify-badge"><i class="fa-solid fa-square-check"></i> Verified Certificate</span>
                     </div>
                 </a>
             </div>
@@ -162,15 +204,15 @@
     <section class="section-padding">
         <div class="container">
             <div class="learning-banner">
-                <h3><i class="fa-solid fa-rocket"></i> Currently Learning</h3>
+                <h3><i class="fa-solid fa-rocket"></i> Currently Learning & Roadmap</h3>
                 <div class="learning-tags">
                     <div class="learning-tag">
                         <i class="fa-solid fa-brain"></i>
-                        <span>Machine Learning</span>
+                        <span>ML Model Deployment</span>
                     </div>
                     <div class="learning-tag">
-                        <i class="fa-solid fa-magnifying-glass-chart"></i>
-                        <span>Data Science</span>
+                        <i class="fa-solid fa-server"></i>
+                        <span>FastAPI REST APIs</span>
                     </div>
                     <div class="learning-tag">
                         <i class="fa-solid fa-signal"></i>
