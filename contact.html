@@ -3,11 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Kankon Mondal - Get in touch for collaboration, freelance, or just a friendly chat">
-    <title>Kankon Mondal - Contact</title>
+    <meta name="description" content="Contact Kankon Mondal - Reach out for research collaborations, software development, or technical inquiries.">
+    <meta name="keywords" content="Contact, Kankon Mondal, ECE KUET, Email, Freelance, Research Collaboration">
+    <meta name="author" content="Kankon Mondal">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kankonnil007.github.io/contact.html">
+    <meta property="og:title" content="Contact Kankon Mondal | Inquiries & Collaboration">
+    <meta property="og:description" content="Get in touch with Kankon Mondal for research opportunities, engineering projects, or technical inquiries.">
+    <meta property="og:image" content="assets/profile.png">
+
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://kankonnil007.github.io/contact.html">
+    <meta property="twitter:title" content="Contact Kankon Mondal | Inquiries & Collaboration">
+    <meta property="twitter:description" content="Get in touch with Kankon Mondal for research opportunities, engineering projects, or technical inquiries.">
+    <meta property="twitter:image" content="assets/profile.png">
+
+    <title>Contact Me | Kankon Mondal</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -15,17 +33,19 @@
 </head>
 <body style="padding-top: 80px;">
     <!-- Navbar -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main Navigation">
         <div class="container nav-container">
-            <a href="index.html" class="logo">Kankon Mondal<span class="dot">.</span></a>
+            <a href="index.html" class="logo" aria-label="Kankon Mondal Home">
+                Kankon Mondal<span class="circuit-dot"></span>
+            </a>
             <ul class="nav-links">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="skills.html" class="nav-link">Skills</a></li>
                 <li><a href="projects.html" class="nav-link">Projects</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
             </ul>
-            <div class="hamburger">
+            <div class="hamburger" role="button" aria-label="Toggle navigation menu" aria-expanded="false" tabindex="0">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -33,125 +53,147 @@
         </div>
     </nav>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section-padding">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <h3>Let's Talk</h3>
-                    <p>I'm currently available for freelance work or new opportunities. If you have a project that needs some creative touch, let's chat.</p>
-                    <div class="contact-details">
-                        <div class="detail-item">
-                            <i class="fa-solid fa-envelope"></i>
-                            <span>kankonmondal89@gmail.com</span>
+    <main>
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-padding">
+            <div class="container">
+                <h1 class="section-title">Get In Touch</h1>
+                <p class="section-subtitle">Have a project in mind, a research inquiry, or simply want to connect? Send a message below.</p>
+                
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h3>Let's Connect</h3>
+                        <p>
+                            I am actively seeking research collaborations in Signal Processing, Analog Electronics, and Machine Learning, as well as software development and open-source contributions.
+                        </p>
+                        <div class="contact-details">
+                            <div class="detail-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>kankonmondal89@gmail.com</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Khulna, Bangladesh</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <span>KUET, ECE Department</span>
+                            </div>
                         </div>
-                        <div class="detail-item">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <span>Khulna, Bangladesh</span>
-                        </div>
-                        <div class="detail-item">
-                            <i class="fa-solid fa-graduation-cap"></i>
-                            <span>KUET, ECE Department</span>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/KankonNil007/" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/kankon-mondal/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://facebook.com/KankonNil/" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                    </div>
-                </div>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="contactName" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="contactEmail" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="contactSubject" name="subject" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="contactMessage" name="message" placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" id="contactSubmitBtn" class="btn btn-primary">
-                        <i class="fa-solid fa-paper-plane"></i> Send Message
-                    </button>
-                    <div id="contactFormResponse" class="form-response" style="display: none;"></div>
-                </form>
-            </div>
-        </div>
-    </section>
 
-    <!-- Connect Cards -->
-    <section class="section-padding">
-        <div class="container">
-            <h2 class="section-title">Connect With Me</h2>
-            <div class="connect-grid">
-                <a href="https://github.com/KankonNil007/" target="_blank" class="connect-card github-card">
-                    <i class="fa-brands fa-github"></i>
-                    <h4>GitHub</h4>
-                    <p>@KankonNil007</p>
-                </a>
-                <a href="https://www.linkedin.com/in/kankon-mondal/" target="_blank" class="connect-card linkedin-card">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                    <h4>LinkedIn</h4>
-                    <p>Kankon Mondal</p>
-                </a>
-                <a href="https://facebook.com/KankonNil/" target="_blank" class="connect-card facebook-card">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <h4>Facebook</h4>
-                    <p>@KankonNil</p>
-                </a>
-                <a href="mailto:kankonmondal89@gmail.com" class="connect-card email-card">
-                    <i class="fa-solid fa-envelope"></i>
-                    <h4>Email</h4>
-                    <p>kankonmondal89@gmail.com</p>
-                </a>
-            </div>
-        </div>
-    </section>
+                        <div style="margin-top: 25px;">
+                            <a href="mailto:kankonmondal89@gmail.com" class="btn btn-outline" style="width: auto; margin-left: 0;">
+                                <i class="fa-solid fa-envelope-open-text"></i> Open Direct Email Client
+                            </a>
+                        </div>
 
-    <!-- FAQ Section -->
-    <section class="section-padding">
-        <div class="container">
-            <h2 class="section-title">Frequently Asked</h2>
-            <div class="faq-grid">
-                <div class="faq-card">
-                    <h4><i class="fa-solid fa-circle-question"></i> Are you available for freelance?</h4>
-                    <p>Yes! I'm open to freelance projects, especially in web development, Python scripting, and data analysis. Feel free to reach out!</p>
-                </div>
-                <div class="faq-card">
-                    <h4><i class="fa-solid fa-circle-question"></i> What's your response time?</h4>
-                    <p>I typically respond within 24 hours. For urgent inquiries, feel free to reach me directly via email.</p>
-                </div>
-                <div class="faq-card">
-                    <h4><i class="fa-solid fa-circle-question"></i> Do you collaborate on open source?</h4>
-                    <p>Absolutely! I'm always excited to contribute to open-source projects. Check out my GitHub for my latest work and contributions.</p>
-                </div>
-                <div class="faq-card">
-                    <h4><i class="fa-solid fa-circle-question"></i> Are you open to research collaboration?</h4>
-                    <p>Yes, I'm actively seeking research opportunities in ECE, signal processing, and smart electronics, especially for M.Sc. programs abroad.</p>
+                        <div class="social-links">
+                            <a href="https://github.com/KankonNil007/" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/kankon-mondal/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://facebook.com/KankonNil/" target="_blank" rel="noopener noreferrer" aria-label="Facebook Profile"><i class="fa-brands fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Contact Form -->
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="contactName" style="display: none;">Your Name</label>
+                            <input type="text" id="contactName" name="name" placeholder="Your Name" required autocomplete="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail" style="display: none;">Your Email</label>
+                            <input type="email" id="contactEmail" name="email" placeholder="Your Email Address" required autocomplete="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject" style="display: none;">Subject</label>
+                            <input type="text" id="contactSubject" name="subject" placeholder="Subject / Topic" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage" style="display: none;">Your Message</label>
+                            <textarea id="contactMessage" name="message" placeholder="Write your message here..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" id="contactSubmitBtn" class="btn btn-primary" style="width: 100%;">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        </button>
+                        <div id="contactFormResponse" class="form-response" style="display: none;" role="alert"></div>
+                    </form>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Connect Cards -->
+        <section class="section-padding section-alt">
+            <div class="container">
+                <h2 class="section-title">Direct Profiles</h2>
+                <p class="section-subtitle">Connect across professional and developer networks.</p>
+                <div class="connect-grid">
+                    <a href="https://github.com/KankonNil007/" target="_blank" rel="noopener noreferrer" class="connect-card github-card">
+                        <i class="fa-brands fa-github"></i>
+                        <h4>GitHub</h4>
+                        <p>@KankonNil007</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kankon-mondal/" target="_blank" rel="noopener noreferrer" class="connect-card linkedin-card">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <h4>LinkedIn</h4>
+                        <p>Kankon Mondal</p>
+                    </a>
+                    <a href="https://facebook.com/KankonNil/" target="_blank" rel="noopener noreferrer" class="connect-card facebook-card">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <h4>Facebook</h4>
+                        <p>@KankonNil</p>
+                    </a>
+                    <a href="mailto:kankonmondal89@gmail.com" class="connect-card email-card">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p>kankonmondal89@gmail.com</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section-padding">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Common queries regarding collaboration, research, and project development.</p>
+                <div class="faq-grid">
+                    <div class="faq-card">
+                        <h4><i class="fa-solid fa-circle-question"></i> Are you open to research collaboration?</h4>
+                        <p>Yes! I am actively interested in collaborating on academic research related to ECE, analog circuits, signal processing, and applied machine learning models.</p>
+                    </div>
+                    <div class="faq-card">
+                        <h4><i class="fa-solid fa-circle-question"></i> What is your typical response time?</h4>
+                        <p>I usually respond within 24 hours. For direct or urgent communication, sending an email directly to my address is recommended.</p>
+                    </div>
+                    <div class="faq-card">
+                        <h4><i class="fa-solid fa-circle-question"></i> Do you contribute to open source software?</h4>
+                        <p>Yes, all my major academic and personal software projects are open source and available under my GitHub profile for inspection and collaboration.</p>
+                    </div>
+                    <div class="faq-card">
+                        <h4><i class="fa-solid fa-circle-question"></i> Are you open for freelance development?</h4>
+                        <p>Yes, I accept select freelance opportunities involving Python automation, machine learning data workflows, and responsive web platforms.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="index.html" class="logo">Kankon Mondal<span class="dot">.</span></a>
-                    <p>ECE student at KUET. Merging hardware knowledge with software efficiency to build impactful solutions.</p>
+                    <a href="index.html" class="logo">Kankon Mondal<span class="circuit-dot"></span></a>
+                    <p>ECE undergraduate at KUET dedicated to open-source development, intelligent signal processing, and research innovation.</p>
                     <div class="footer-socials">
-                        <a href="https://github.com/KankonNil007/" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/kankon-mondal/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://facebook.com/KankonNil/" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://github.com/KankonNil007/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/kankon-mondal/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://facebook.com/KankonNil/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="mailto:kankonmondal89@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
                     </div>
                 </div>
                 <div class="footer-nav">
-                    <h4>Quick Links</h4>
+                    <h4>Navigation</h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
@@ -161,14 +203,14 @@
                     </ul>
                 </div>
                 <div class="footer-contact">
-                    <h4>Get In Touch</h4>
+                    <h4>Contact Details</h4>
                     <p><i class="fa-solid fa-envelope"></i> kankonmondal89@gmail.com</p>
                     <p><i class="fa-solid fa-location-dot"></i> Khulna, Bangladesh</p>
                     <p><i class="fa-solid fa-graduation-cap"></i> KUET, ECE Department</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Kankon Mondal. All rights reserved.</p>
+                <p>&copy; <span class="current-year">2026</span> Kankon Mondal. All rights reserved.</p>
             </div>
         </div>
     </footer>
