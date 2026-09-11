@@ -2,6 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  output: "export",
+  trailingSlash: true,
   allowedDevOrigins: ["localhost", "127.0.0.1", "192.168.10.242"],
   images: {
     unoptimized: true,
