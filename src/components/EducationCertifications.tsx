@@ -144,8 +144,9 @@ export const EducationCertifications: React.FC = () => {
                     >
                       <Image
                         src={cert.image}
-                        alt={cert.title}
+                        alt={`${cert.title} — Verified credential issued by ${cert.issuer}`}
                         fill
+                        loading="lazy"
                         sizes="(max-width: 768px) 100vw, 300px"
                         className="object-cover object-top filter brightness-90 group-hover:scale-105 group-hover:brightness-100 transition-all duration-300"
                       />
@@ -179,6 +180,7 @@ export const EducationCertifications: React.FC = () => {
                       href={cert.verifyUrl}
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label={`Verify ${cert.title} credential from ${cert.issuer}`}
                       className="w-full flex items-center justify-center space-x-1.5 py-2 px-3 rounded-xl bg-slate-800/80 hover:bg-slate-700 text-xs font-semibold text-emerald-300 border border-slate-700 transition-colors"
                     >
                       <CheckCircle2 size={13} className="text-emerald-400" />
@@ -226,7 +228,7 @@ export const EducationCertifications: React.FC = () => {
               <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-black border border-slate-800 mb-5">
                 <Image
                   src={activeCert.image}
-                  alt={activeCert.title}
+                  alt={`${activeCert.title} Official Certificate — ${activeCert.issuer}`}
                   fill
                   className="object-contain"
                 />
@@ -240,6 +242,7 @@ export const EducationCertifications: React.FC = () => {
                   href={activeCert.verifyUrl}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={`Verify ${activeCert.title} credential on official portal`}
                   className="flex items-center space-x-1.5 px-5 py-2 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs shadow-md"
                 >
                   <CheckCircle2 size={14} />

@@ -13,9 +13,9 @@ export const personalInfo = {
   tagline: 'Engineering smart systems at the intersection of embedded hardware, machine learning pipelines, and modern software.',
   roles: [
     'ECE Undergraduate',
-    'Python & C Developer',
+    'Python Developer',
     'Machine Learning Explorer',
-    'Embedded Systems Builder',
+    'Deep Learner',
     'Open Source Contributor'
   ],
   bio: [

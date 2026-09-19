@@ -22,7 +22,7 @@ export const CurrentlyExploring: React.FC = () => {
   };
 
   return (
-    <section className="py-20 relative bg-gradient-to-b from-[#060911] via-[#080d1a] to-[#060911] border-t border-slate-900">
+    <section id="exploring" className="py-20 relative bg-gradient-to-b from-[#060911] via-[#080d1a] to-[#060911] border-t border-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Header */}

@@ -54,7 +54,7 @@ export const Footer: React.FC = () => {
                   key={s.platform}
                   href={s.url}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="me noopener noreferrer"
                   aria-label={`${personalInfo.name} on ${s.platform}`}
                   className="p-2.5 rounded-xl bg-slate-900/80 hover:bg-slate-800 border border-slate-800/80 hover:border-cyan-500/40 text-slate-400 hover:text-cyan-400 transition-all duration-200"
                 >

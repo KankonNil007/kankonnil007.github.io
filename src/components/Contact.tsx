@@ -156,7 +156,7 @@ export const Contact: React.FC = () => {
                   <a
                     href="https://github.com/KankonNil007"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="me noopener noreferrer"
                     className="flex items-center space-x-2.5 p-2.5 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-cyan-500/40 text-xs font-medium text-slate-200 transition-colors"
                   >
                     <Github size={15} className="text-cyan-400" />
@@ -167,7 +167,7 @@ export const Contact: React.FC = () => {
                   <a
                     href="https://www.linkedin.com/in/kankon-mondal/"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="me noopener noreferrer"
                     className="flex items-center space-x-2.5 p-2.5 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-cyan-500/40 text-xs font-medium text-slate-200 transition-colors"
                   >
                     <Linkedin size={15} className="text-sky-400" />
@@ -178,7 +178,7 @@ export const Contact: React.FC = () => {
                   <a
                     href="https://facebook.com/KankonNil/"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="me noopener noreferrer"
                     className="flex items-center space-x-2.5 p-2.5 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-cyan-500/40 text-xs font-medium text-slate-200 transition-colors"
                   >
                     <Facebook size={15} className="text-blue-400" />

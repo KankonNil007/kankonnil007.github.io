@@ -197,7 +197,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
                     key={s.platform}
                     href={s.url}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="me noopener noreferrer"
                     aria-label={`${personalInfo.name} on ${s.platform}`}
                     className="p-2.5 rounded-lg bg-slate-900/80 hover:bg-slate-800 border border-slate-800 hover:border-cyan-500/40 text-slate-400 hover:text-cyan-400 transition-all duration-200"
                   >
@@ -238,7 +238,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
                 <div className="relative w-full aspect-square overflow-hidden rounded-b-xl bg-slate-950">
                   <Image
                     src="/assets/profile.png"
-                    alt={personalInfo.name}
+                    alt="Kankon Mondal — Machine Learning Developer & ECE Student"
                     fill
                     sizes="(max-width: 768px) 300px, 400px"
                     className="object-cover object-center filter brightness-95 contrast-105 hover:scale-105 transition-transform duration-500"

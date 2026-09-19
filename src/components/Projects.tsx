@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { projectsData } from '@/data/portfolioData';
 import { Project, ProjectCategory } from '@/types/portfolio';
@@ -13,7 +14,8 @@ import {
   Layers,
   Sparkles,
   CheckCircle2,
-  FolderGit2
+  FolderGit2,
+  ArrowUpRight
 } from 'lucide-react';
 
 export const Projects: React.FC = () => {
@@ -27,6 +29,14 @@ export const Projects: React.FC = () => {
     { id: 'systems', label: 'Systems & Hardware' },
     { id: 'cad', label: 'Engineering CAD' },
   ];
+
+  const projectSlugMap: Record<string, string> = {
+    greensort: 'greensort-waste-classifier',
+    'heart-disease': 'heart-disease-prediction',
+    'e-lab': 'e-lab',
+    'kuet-ece': 'kuet-ece',
+    cs50x: 'cs50x',
+  };
 
   const filteredProjects = projectsData.filter(
     (project) => selectedCategory === 'all' || project.category === selectedCategory
@@ -180,6 +190,20 @@ export const Projects: React.FC = () => {
                     </div>
                   </div>
 
+                  {/* Case Study Deep Dive Link */}
+                  {projectSlugMap[project.id] && (
+                    <div className="mb-4">
+                      <Link
+                        href={`/projects/${projectSlugMap[project.id]}/`}
+                        className="inline-flex items-center space-x-1.5 text-xs font-mono font-semibold text-cyan-400 hover:text-cyan-300 transition-colors group/link"
+                        aria-label={`Read technical case study and specifications for ${project.title}`}
+                      >
+                        <span>Technical Case Study & Specs</span>
+                        <ArrowUpRight size={13} className="group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
+                      </Link>
+                    </div>
+                  )}
+
                   {/* Action Buttons */}
                   <div className="pt-4 border-t border-slate-800/80 flex items-center gap-3">
                     {project.codeUrl && (
@@ -187,6 +211,7 @@ export const Projects: React.FC = () => {
                         href={project.codeUrl}
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label={`View source code for ${project.title} on GitHub`}
                         className="flex-1 flex items-center justify-center space-x-1.5 py-2 px-3 rounded-xl bg-slate-800/80 hover:bg-slate-700 border border-slate-700/60 text-xs font-semibold text-slate-200 hover:text-white transition-colors"
                       >
                         <Github size={14} />
@@ -199,6 +224,7 @@ export const Projects: React.FC = () => {
                         href={project.demoUrl}
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label={`View live interactive demo for ${project.title}`}
                         className="flex-1 flex items-center justify-center space-x-1.5 py-2 px-3 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-xs font-bold text-slate-950 transition-colors shadow-sm shadow-cyan-500/20"
                       >
                         <ExternalLink size={14} />
