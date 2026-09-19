@@ -75,6 +75,7 @@ npm run start
 
 ## 🎓 Verified Credentials
 
+- 📜 **Machine Learning Specialization** – DeepLearning.AI & Stanford Online via Coursera • [Verify](https://coursera.org/verify/specialization/RNYC6Q9U9GOO)
 - 📜 **Python for Data Science, AI & Development** – IBM via Coursera • [Verify](https://coursera.org/verify/OO2WDVEV3CJC)
 - 📜 **Applied Plotting, Charting & Data Representation in Python** – University of Michigan via Coursera • [Verify](https://coursera.org/verify/3RBFUF5AD9NI)
 - 📜 **Introduction to Data Science in Python** – University of Michigan via Coursera • [Verify](https://coursera.org/verify/MHM6FC476N4F)

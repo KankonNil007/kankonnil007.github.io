@@ -109,6 +109,16 @@ export const educationData: EducationItem[] = [
 
 export const certificationsData: Certification[] = [
   {
+    id: 'stanford-ml',
+    title: 'Machine Learning Specialization',
+    issuer: 'DeepLearning.AI & Stanford Online',
+    date: 'September 3, 2026',
+    credentialId: 'RNYC6Q9U9GOO',
+    verifyUrl: 'https://coursera.org/verify/specialization/RNYC6Q9U9GOO',
+    image: '/assets/Machine-Learning-Specialization.jpg',
+    summary: 'Foundational 3-course specialization taught by Andrew Ng covering supervised learning, neural networks, decision trees, unsupervised clustering, anomaly detection, recommender systems, and reinforcement learning.'
+  },
+  {
     id: 'ibm-python',
     title: 'Python for Data Science, AI & Development',
     issuer: 'IBM via Coursera',

@@ -45,7 +45,7 @@ export const EducationCertifications: React.FC = () => {
             Education & Certifications
           </h2>
           <p className="mt-3 text-slate-400 text-base sm:text-lg">
-            Formal engineering degree progression at KUET alongside verified technical credentials from Harvard, IBM, and the University of Michigan.
+            Formal engineering degree progression at KUET alongside verified technical credentials from Stanford Online, DeepLearning.AI, Harvard, IBM, and the University of Michigan.
           </p>
         </div>
 
