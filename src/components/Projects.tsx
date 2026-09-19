@@ -97,6 +97,13 @@ export const Projects: React.FC = () => {
                       </span>
 
                       <div className="flex items-center space-x-2">
+                        {project.role && (
+                          <span className="inline-flex items-center space-x-1 text-[11px] font-mono px-2 py-0.5 rounded-full bg-purple-950/80 text-purple-300 border border-purple-800/60">
+                            <Code size={11} className="text-purple-400" />
+                            <span>{project.role}</span>
+                          </span>
+                        )}
+
                         {project.demoUrl && (
                           <span className="inline-flex items-center space-x-1.5 text-[11px] font-mono px-2 py-0.5 rounded-full bg-emerald-950/80 text-emerald-300 border border-emerald-800/60">
                             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
@@ -183,7 +190,7 @@ export const Projects: React.FC = () => {
                         className="flex-1 flex items-center justify-center space-x-1.5 py-2 px-3 rounded-xl bg-slate-800/80 hover:bg-slate-700 border border-slate-700/60 text-xs font-semibold text-slate-200 hover:text-white transition-colors"
                       >
                         <Github size={14} />
-                        <span>Source Code</span>
+                        <span>{project.role ? 'Contributed Repo' : 'Source Code'}</span>
                       </a>
                     )}
 
@@ -220,7 +227,7 @@ export const Projects: React.FC = () => {
                 Looking for more technical experiments?
               </h4>
               <p className="text-sm text-slate-400 mt-0.5">
-                Explore all 15 public repositories, algorithm problem sets, and codebases directly on GitHub.
+                Explore all open-source repositories, algorithm problem sets, and codebases directly on GitHub.
               </p>
             </div>
           </div>

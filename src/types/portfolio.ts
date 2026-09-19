@@ -15,6 +15,7 @@ export interface Project {
   stats?: string;
   featured?: boolean;
   image?: string;
+  role?: string;
 }
 
 export interface SkillItem {

@@ -55,7 +55,7 @@ export const personalInfo = {
 
 export const defaultStats: StatItem[] = [
   { label: 'Engineering Major', value: 'ECE', icon: 'Cpu' },
-  { label: 'Public Repos', value: '15', icon: 'GitBranch', isDynamic: true },
+  { label: 'Public Repos', value: '19', icon: 'GitBranch', isDynamic: true },
   { label: 'GitHub Stars', value: '36+', icon: 'Star', isDynamic: true },
   { label: 'University', value: 'KUET', icon: 'GraduationCap' }
 ];
@@ -239,6 +239,25 @@ export const skillCategories: SkillCategory[] = [
 
 export const projectsData: Project[] = [
   {
+    id: 'e-lab',
+    title: 'E-Lab – Interactive Engineering Laboratory',
+    category: 'systems',
+    categoryLabel: 'ECE Lab / Simulation',
+    shortDescription: 'Comprehensive browser-based engineering laboratory for ECE students to design, simulate, and visualize circuits, signals, digital logic, and control systems.',
+    problemStatement: 'Engineering education often detaches mathematical theory from intuitive experimentation due to expensive laboratory equipment and bulky desktop software.',
+    highlights: [
+      'Interactive circuit analysis: DC V-I load lines, RC/RL transient curves, RLC resonance sweeps, and diode rectifier ripple models',
+      'Signals & systems suite: Harmonic Fourier series decomposition (Gibbs phenomenon), graphical convolution visualizer, and multi-waveform generator',
+      'Digital electronics & control: TTL 74LS logic gates with propagation delay, flip-flops, 4-bit counters, and 2nd-order Bode plots',
+      'Offline engineering AI guidance, global command palette (Ctrl+K), and KaTeX mathematical typography with zero server dependencies'
+    ],
+    tags: ['TypeScript', 'React', 'Vite', 'Tailwind CSS', 'KaTeX', 'Recharts', 'Zustand', 'Circuits'],
+    codeUrl: 'https://github.com/KankonNil007/E-Lab',
+    demoUrl: 'https://kankonnil007.github.io/E-Lab/',
+    stats: 'Interactive Lab',
+    featured: true
+  },
+  {
     id: 'greensort',
     title: 'GreenSort – Automated Waste Classifier',
     category: 'ml',
@@ -323,6 +342,24 @@ export const projectsData: Project[] = [
     ],
     tags: ['FastAPI', 'Python', 'Pydantic', 'AsyncIO', 'REST API', 'Swagger'],
     codeUrl: 'https://github.com/KankonNil007/Introduction-to-FastAPI',
+    featured: false
+  },
+  {
+    id: 'bup-cse-fest-hackathon',
+    title: 'BUP CSE Fest Hackathon – High-Concurrency Booking Engine',
+    category: 'web',
+    categoryLabel: 'Hackathon / Backend API',
+    shortDescription: 'High-throughput multitenant room reservation & automated refund microservice hardened against race conditions and deadlocks for BUP CSE Fest 2026.',
+    problemStatement: 'Preventing race conditions, double-bookings, rate limit bypasses, deadlocks, and transaction atomicity leaks under concurrent asynchronous load in a competitive hackathon environment.',
+    highlights: [
+      'Engineered threading locks across booking creation, rate limiters, and quota checks to eliminate critical race conditions and double-bookings',
+      'Resolved circular lock dependencies between email and audit notifications to eliminate thread deadlocks and guarantee service liveness',
+      'Enforced ACID transaction atomicity during cancellations and refunds, preventing state corruption and financial refund exploits',
+      'Optimized SQL queries with database-level interval overlap checks to eliminate OOM memory crashes under sustained request volume'
+    ],
+    tags: ['Python', 'FastAPI', 'Docker', 'Concurrency', 'SQLAlchemy', 'JWT Auth', 'Hackathon'],
+    codeUrl: 'https://github.com/tahfimism/bup-cse-fest-preli',
+    role: 'Hackathon Contributor',
     featured: false
   },
   {

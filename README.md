@@ -59,8 +59,10 @@ npm run start
 
 | Project | Domain | Technologies | Links |
 | :--- | :--- | :--- | :--- |
+| **E-Lab Interactive Laboratory** | ECE Simulation | TypeScript, React, Vite, KaTeX, Recharts | [GitHub](https://github.com/KankonNil007/E-Lab) • [Live Demo](https://kankonnil007.github.io/E-Lab/) |
 | **GreenSort Waste Classifier** | Deep Learning / CV | TensorFlow, Keras, FastAPI, Render | [GitHub](https://github.com/KankonNil007/GreenSort-Waste-Classifier) • [Live App](https://greensort-waste-classifier.onrender.com/) • [API Docs](https://greensort-waste-classifier.onrender.com/docs) |
 | **KUET-ECE Hub** | Web Platform | HTML5, CSS3, JavaScript | [GitHub](https://github.com/KankonNil007/KUET-ECE) • [Live Demo](https://kankonnil007.github.io/KUET-ECE/) |
+| **BUP CSE Fest Hackathon API** | Backend / Concurrency | Python, FastAPI, Docker, Locks, ACID | [GitHub (Contributor)](https://github.com/tahfimism/bup-cse-fest-preli) |
 | **Heart Disease Prediction** | Machine Learning | Python, Scikit-Learn, Pandas, Render | [GitHub](https://github.com/KankonNil007/Heart-Disease-Prediction) • [Live App](https://heart-disease-prediction-z7ub.onrender.com) |
 | **CS50x CS Solutions** | Computer Science | C, Python, SQL, DSA | [GitHub (⭐ 29)](https://github.com/KankonNil007/CS50x-2026) |
 | **Introduction to FastAPI** | Backend APIs | FastAPI, Pydantic, OpenAPI | [GitHub](https://github.com/KankonNil007/Introduction-to-FastAPI) |

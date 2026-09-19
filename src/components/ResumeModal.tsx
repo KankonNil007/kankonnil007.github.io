@@ -157,7 +157,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
               <span>Selected Key Projects</span>
             </h2>
             <div className="space-y-3">
-              {projectsData.slice(0, 4).map((p) => (
+              {projectsData.filter((p) => p.featured).map((p) => (
                 <div key={p.id} className="space-y-0.5">
                   <div className="flex justify-between font-semibold text-white">
                     <span>{p.title}</span>
