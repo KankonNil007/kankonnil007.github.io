@@ -17,7 +17,8 @@ import {
   GitBranch,
   Star,
   Cpu,
-  GraduationCap
+  GraduationCap,
+  Download
 } from 'lucide-react';
 
 interface HeroProps {
@@ -170,13 +171,25 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
               </Link>
 
               {onOpenResume && (
-                <button
-                  onClick={onOpenResume}
-                  className="flex items-center space-x-2 px-5 py-3 text-sm font-semibold rounded-xl bg-slate-900/90 hover:bg-slate-800 border border-slate-700/80 text-slate-200 hover:text-white shadow-md transition-all duration-200 transform hover:-translate-y-0.5"
-                >
-                  <FileText size={16} className="text-cyan-400" />
-                  <span>Download CV</span>
-                </button>
+                <div className="inline-flex items-center rounded-xl bg-slate-900/90 hover:bg-slate-900 border border-slate-700/80 p-1 shadow-md transition-all duration-200 transform hover:-translate-y-0.5">
+                  <button
+                    onClick={onOpenResume}
+                    className="flex items-center space-x-2 px-4 py-2 text-sm font-semibold text-slate-200 hover:text-white hover:bg-slate-800/80 rounded-lg transition-colors"
+                  >
+                    <FileText size={16} className="text-cyan-400" />
+                    <span>Curriculum Vitae</span>
+                  </button>
+                  <div className="w-px h-5 bg-slate-700/80 mx-1" />
+                  <a
+                    href="/Kankon_Mondal_CV.pdf"
+                    download="Kankon_Mondal_CV.pdf"
+                    className="p-2 text-slate-400 hover:text-cyan-300 hover:bg-slate-800/80 rounded-lg transition-colors"
+                    title="Direct Download CV (PDF)"
+                    aria-label="Direct Download CV PDF"
+                  >
+                    <Download size={15} />
+                  </a>
+                </div>
               )}
 
               <Link

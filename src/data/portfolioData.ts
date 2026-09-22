@@ -91,7 +91,7 @@ export const educationData: EducationItem[] = [
   {
     degree: 'B.Sc. in Electronics & Communication Engineering',
     institution: 'Khulna University of Engineering & Technology (KUET)',
-    period: '2024 – Present',
+    period: 'Sep 2025 – Present',
     location: 'Khulna, Bangladesh',
     description: 'Comprehensive engineering curriculum balancing theoretical mathematical foundations with hands-on laboratory experimentation in analog electronics, microprocessors, and signals.',
     courses: [

@@ -96,6 +96,12 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/cv/" className="hover:text-cyan-400 transition-colors flex items-center gap-1.5">
+                  <span>Curriculum Vitae</span>
+                  <span className="text-[10px] font-mono text-cyan-400 bg-cyan-950/80 px-1.5 py-0.5 rounded border border-cyan-800/60">PDF</span>
+                </Link>
+              </li>
+              <li>
                 <Link href="#contact" className="hover:text-cyan-400 transition-colors">
                   Contact & Collaborate
                 </Link>
